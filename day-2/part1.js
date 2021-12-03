@@ -1,0 +1,2 @@
+// my new gimmick is writing extremely cursed code
+console.log((arr => arr[0] * arr[1])(require("fs").readFileSync("data.txt", "utf-8").split("\n").map(line => line.split(" ")).map(tokens => [tokens[0], Number(tokens[1])]).reduce((curPos, command) => [curPos[0] + (command[0] == "forward") * command[1], curPos[1] + ({down: 1, up: -1, forward: 0})[command[0]] * command[1]], [0, 0])));
