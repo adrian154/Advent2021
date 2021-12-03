@@ -73,6 +73,8 @@ shr r0, 4, r0
 mul r0, r1, r2, r3 ; [r2, r3] contain the 32-bit result
 
 ; print our results
+out '0'
+out 'x'
 mov r2, r0
 call printw
 mov r3, r0
