@@ -1,3 +1,5 @@
+; see README.md for more info
+
 ; we need to find the most common bit in each position
 ; then we can just bitwise NOT our result to find which bit was least common
 
